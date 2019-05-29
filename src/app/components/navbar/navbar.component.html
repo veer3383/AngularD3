@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-expand-xl navbar-light row justify-content-center" style="background-color: #8400ff; color:white;">
+  	<div *ngIf="lowResolution" class="alert alert-danger alert-dismissible fade show" role="alert">
+        For the best experience please use Desktop, Laptop or Tablet.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+  <div class="col-lg-3 col-md-3 col-xl-2">
+    <a class="navbar-brand" href="#">
+      <p>D3js in Angular</p>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div  class="col-lg-9 col-md-9 col-xl-9" style="padding-left: 0;
+  padding-right: 0;">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/barchart']">Bar Chart</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/stackedbarchart']">Stacked Bar Chart</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/linechart']">Line Chart</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/areachart']">Area Chart</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/piechart']">Pie Chart</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/donutchart']">Donut Chart</a>
+      </li>
+    </ul>
+  </div>
+</nav>

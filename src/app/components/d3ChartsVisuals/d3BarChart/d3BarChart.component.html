@@ -1,0 +1,12 @@
+<svg [attr.height]="height" [attr.width]="width">
+  <g class="axis" [attr.transform]="axisBottomTransform" appD3Axis orientation="horizontal" [scale]="xScale" stroke="grey"
+    line="grey" path="white"></g>
+  <g class="axis" [attr.transform]="axisLeftTransform" appD3Axis orientation="vertical" [scale]="yScale" stroke="grey"></g>
+  <g [attr.transform]="transform">
+    <rect *ngFor="let item of data; let i=index;" [attr.height]="barHeight(item.value)" [attr.width]="barWidth" [attr.x]="pointX(item.name)"
+      [attr.y]="2" fill="#8400ff" rx="10" ry="10">
+    </rect>
+
+  </g>
+
+</svg>

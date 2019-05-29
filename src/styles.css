@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+.line {
+    fill: none;
+    stroke: #8400ff;
+    stroke-width: 3px;
+  }
+  
+  .area {
+    fill: #8400ff;
+    opacity: 0.3
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+  }
+  
+  path.domain {
+    stroke: none;
+  }
+  
+  .y .tick line {
+    stroke: #ddd;
+  }

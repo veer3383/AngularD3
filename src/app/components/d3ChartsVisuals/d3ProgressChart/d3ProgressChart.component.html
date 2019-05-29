@@ -1,0 +1,17 @@
+<svg [attr.height]="height" [attr.width]="width" transform="rotate(90)">
+    <g class="taxis" [attr.transform]="axisTopTransform" appD3Axis orientation="horizontal" [scale]="xtScale" [type]="type"></g>
+    <g class="xaxis" [attr.transform]="axisBottomTransform" appD3Axis orientation="horizontal" [scale]="xScale" [type]="type"
+        stroke="white"></g>
+    <g class="yaxis" [attr.transform]="axisLeftTransform" appD3Axis orientation="vertical" [scale]="yScale" [type]="type" stroke="white">
+    </g>
+    <g [attr.transform]="transform">
+        <rect *ngFor="let item of data; let i=index;" [attr.height]="chartHeight -15" [attr.width]="barWidth" [attr.x]="pointX(item.name)"
+            [attr.y]="2" fill="white" rx="10" ry="10">
+        </rect>
+        <rect *ngFor="let item of data; let i=index;" [attr.height]="barHeight(item.value)" [attr.width]="barWidth" [attr.x]="pointX(item.name)"
+            [attr.y]="2" fill="orange" rx="10" ry="10">
+        </rect>
+
+    </g>
+
+</svg>

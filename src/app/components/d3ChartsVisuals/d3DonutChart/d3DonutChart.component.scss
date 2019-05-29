@@ -1,0 +1,14 @@
+:host {
+    display: block;
+    height: 300px;
+    width: 300px;
+    padding-left: 80px;
+}
+.arc text {
+    font: 10px sans-serif;
+    text-anchor: middle;
+}
+
+.arc path {
+    stroke: #fff;
+}

@@ -1,0 +1,13 @@
+<svg [attr.height]="height" [attr.width]="width">
+  <g [attr.transform]="transform">
+    <g
+      appD3Pie
+      [data]="data"
+      [pie]="pie"
+      [arc]="arc"
+      [colors]="color"
+      [labelArc]="labelArc"
+    ></g>
+  </g>
+  <g appD3Legend [keys]="keys" [color]="color" [width]="legendWidth"></g>
+</svg>

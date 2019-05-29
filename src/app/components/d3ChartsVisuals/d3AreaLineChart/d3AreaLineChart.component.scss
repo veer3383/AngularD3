@@ -1,0 +1,17 @@
+:host {
+    display: block;
+    height: 650px;
+    width: 1000px;
+}
+
+/*svg {
+    padding-left: 50px;
+    height: 100%;
+    width: 100%;
+}*/
+svg {
+    padding-left: 80px;
+    height: 100%;
+    width: 100%;
+    overflow: overlay;
+}
