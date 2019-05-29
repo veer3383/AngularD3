@@ -3,4 +3,7 @@
     <g class="axis"  [attr.transform]="axisBottomTransform" appD3Axis orientation="horizontal" [scale]="xScale" [type]="type" stroke="grey"></g>
     <g class="axis" [attr.transform]="axisLeftTransform" appD3Axis orientation="vertical" [scale]="yScale" [type]="type" stroke="grey">
     </g>
+    <circle *ngFor="let item of data; let i=index;" [attr.cx]="pointX(item.date)" [attr.cy]="pointY(item.close)" 
+          (mouseover)="handleMouseover($event, item)" (mouseout)="handleMouseout($event, item)" r="4" stroke="black" stroke-width="0.1" fill="#59a6f5" />
+
 </svg>
